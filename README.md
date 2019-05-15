@@ -14,7 +14,6 @@
 
 2. Fork此仓库至自己账号
 
-* 此仓库页面 <https://github.com/cs-course/iot-storage-experiment-assignment-2018>
 * Fork功能位于页面右上角
 * Fork操作将自动跳转进自己账号中"克隆"仓库
 
