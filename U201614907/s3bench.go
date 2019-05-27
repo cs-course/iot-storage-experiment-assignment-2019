@@ -39,8 +39,31 @@ func main() {
 	numSamples := flag.Int("numSamples", 200, "total number of requests to send")
 	skipCleanup := flag.Bool("skipCleanup", false, "skip deleting objects created by this tool at the end of the run")
 	verbose := flag.Bool("verbose", false, "print verbose per thread status")
-
+	// csv filepath
+	filepaths := flag.String("filepath", "test.csv", "output csv file")
+	
 	flag.Parse()
+
+	var Header string = ""
+	
+	// if file not exist
+	if !PathExists(*filepaths) {
+		Header = "Size-Clients-Samples,W_Transferred(MB),W_Throughput(MB/s),W_Duration(s),W_Max,W_99th,W_90th,W_75th,W_50th,W_25th,W_Min,"
+		Header += "R_Transferred(MB),R_Throughput(MB/s),R_Duration(s),R_Max,R_99th,R_90th,R_75th,R_50th,R_25th,R_Min\n"
+	}
+	// create file
+	file, file_err := os.OpenFile(*filepaths, os.O_CREATE|os.O_WRONLY, 0755)
+	if file_err != nil {
+		fmt.Println("file error", file_err)
+		os.Exit(1)
+	}
+	// defer closed
+	defer file.Close()
+
+	// Write Header
+	file.Seek(0, 2)    // 最后增加
+  file.WriteString(Header)
+
 
 	if *numClients > *numSamples || *numSamples < 1 {
 		fmt.Printf("numClients(%d) needs to be less than numSamples(%d) and greater than 0\n", *numClients, *numSamples)
@@ -88,13 +111,18 @@ func main() {
 	}
 	params.StartClients(cfg)
 
+	// Write to File
+	fileString := params.toFileString()
 	fmt.Printf("Running %s test...\n", opWrite)
 	writeResult := params.Run(opWrite)
+	fileString += writeResult.toFileString()
 	fmt.Println()
 
 	fmt.Printf("Running %s test...\n", opRead)
 	readResult := params.Run(opRead)
+	fileString += readResult.toFileString()
 	fmt.Println()
+	fileString += "\n"
 
 	// Repeating the parameters of the test followed by the results
 	fmt.Println(params)
@@ -102,6 +130,8 @@ func main() {
 	fmt.Println(writeResult)
 	fmt.Println()
 	fmt.Println(readResult)
+	// file
+	file.WriteString(fileString)
 
 	// Do cleanup if required
 	if !*skipCleanup {
@@ -254,7 +284,14 @@ func (params Params) String() string {
 	output += fmt.Sprintf("objectSize:       %0.4f MB\n", float64(params.objectSize)/(1024*1024))
 	output += fmt.Sprintf("numClients:       %d\n", params.numClients)
 	output += fmt.Sprintf("numSamples:       %d\n", params.numSamples)
-	output += fmt.Sprintf("verbose:       %d\n", params.verbose)
+	output += fmt.Sprintf("verbose:       %t\n", params.verbose)
+	return output
+}
+
+func (params Params) toFileString() string {
+	output := fmt.Sprintf("%0.4fMB-", float64(params.objectSize)/(1024*1024))
+	output += fmt.Sprintf("%d-", params.numClients)
+	output += fmt.Sprintf("%d,", params.numSamples)
 	return output
 }
 
@@ -276,15 +313,33 @@ func (r Result) String() string {
 	if len(r.opDurations) > 0 {
 		report += fmt.Sprintln("------------------------------------")
 		report += fmt.Sprintf("%s times Max:       %0.3f s\n", r.operation, r.percentile(100))
-		report += fmt.Sprintf("%s times 99th %%ile: %0.3f s\n", r.operation, r.percentile(99))
-		report += fmt.Sprintf("%s times 90th %%ile: %0.3f s\n", r.operation, r.percentile(90))
-		report += fmt.Sprintf("%s times 75th %%ile: %0.3f s\n", r.operation, r.percentile(75))
-		report += fmt.Sprintf("%s times 50th %%ile: %0.3f s\n", r.operation, r.percentile(50))
-		report += fmt.Sprintf("%s times 25th %%ile: %0.3f s\n", r.operation, r.percentile(25))
+		report += fmt.Sprintf("%s times 99th %%File: %0.3f s\n", r.operation, r.percentile(99))
+		report += fmt.Sprintf("%s times 90th %%File: %0.3f s\n", r.operation, r.percentile(90))
+		report += fmt.Sprintf("%s times 75th %%File: %0.3f s\n", r.operation, r.percentile(75))
+		report += fmt.Sprintf("%s times 50th %%File: %0.3f s\n", r.operation, r.percentile(50))
+		report += fmt.Sprintf("%s times 25th %%File: %0.3f s\n", r.operation, r.percentile(25))
 		report += fmt.Sprintf("%s times Min:       %0.3f s\n", r.operation, r.percentile(0))
 	}
 	return report
 }
+
+// tofileString
+func (r Result) toFileString() string {
+	report := fmt.Sprintf("%0.3f,", float64(r.bytesTransmitted)/(1024*1024))
+	report += fmt.Sprintf("%0.2f,", (float64(r.bytesTransmitted)/(1024*1024))/r.totalDuration.Seconds())
+	report += fmt.Sprintf("%0.3f,", r.totalDuration.Seconds())
+	if len(r.opDurations) > 0 {
+		report += fmt.Sprintf("%0.3f,", r.percentile(100))
+		report += fmt.Sprintf("%0.3f,", r.percentile(99))
+		report += fmt.Sprintf("%0.3f,", r.percentile(90))
+		report += fmt.Sprintf("%0.3f,", r.percentile(75))
+		report += fmt.Sprintf("%0.3f,", r.percentile(50))
+		report += fmt.Sprintf("%0.3f,", r.percentile(25))
+		report += fmt.Sprintf("%0.3f,", r.percentile(0))
+	}
+	return report
+}
+
 
 func (r Result) percentile(i int) float64 {
 	if i >= 100 {
@@ -301,4 +356,15 @@ type Resp struct {
 	err      error
 	duration time.Duration
 	numBytes int64
+}
+
+func PathExists(path string) (bool) {
+	_, err := os.Stat(path)
+	if err == nil {
+		return true
+	}
+	if os.IsNotExist(err) {
+		return false
+	}
+	return false
 }
