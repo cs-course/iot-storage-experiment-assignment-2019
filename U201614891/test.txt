@@ -1,0 +1,649 @@
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=1024
+Results Summary for Write Operation(s)
+Total Transferred: 0.098 MB
+Total Throughput:  1.21 MB/s
+Total Duration:    0.081 s
+Number of Errors:  0
+Write times 99th %ile: 0.011 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.098 MB
+Total Throughput:  5.16 MB/s
+Total Duration:    0.019 s
+Number of Errors:  0
+Read times 99th %ile: 0.005 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=2048
+Results Summary for Write Operation(s)
+Total Transferred: 0.195 MB
+Total Throughput:  2.24 MB/s
+Total Duration:    0.087 s
+Number of Errors:  0
+Write times 99th %ile: 0.012 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.195 MB
+Total Throughput:  8.26 MB/s
+Total Duration:    0.024 s
+Number of Errors:  0
+Read times 99th %ile: 0.006 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=4096
+Results Summary for Write Operation(s)
+Total Transferred: 0.391 MB
+Total Throughput:  5.54 MB/s
+Total Duration:    0.071 s
+Number of Errors:  0
+Write times 99th %ile: 0.008 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.391 MB
+Total Throughput:  21.88 MB/s
+Total Duration:    0.018 s
+Number of Errors:  0
+Read times 99th %ile: 0.005 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=10240
+Results Summary for Write Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  12.38 MB/s
+Total Duration:    0.079 s
+Number of Errors:  0
+Write times 99th %ile: 0.011 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  24.71 MB/s
+Total Duration:    0.040 s
+Number of Errors:  0
+Read times 99th %ile: 0.007 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=20480
+Results Summary for Write Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  18.46 MB/s
+Total Duration:    0.106 s
+Number of Errors:  0
+Write times 99th %ile: 0.016 s
+Results Summary for Read Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  56.17 MB/s
+Total Duration:    0.035 s
+Number of Errors:  0
+Read times 99th %ile: 0.006 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=40960
+Results Summary for Write Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  37.77 MB/s
+Total Duration:    0.103 s
+Number of Errors:  0
+Write times 99th %ile: 0.015 s
+Results Summary for Read Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  107.79 MB/s
+Total Duration:    0.036 s
+Number of Errors:  0
+Read times 99th %ile: 0.008 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=102400
+Results Summary for Write Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  74.82 MB/s
+Total Duration:    0.131 s
+Number of Errors:  0
+Write times 99th %ile: 0.018 s
+Results Summary for Read Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  247.95 MB/s
+Total Duration:    0.039 s
+Number of Errors:  0
+Read times 99th %ile: 0.009 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=204800
+Results Summary for Write Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  166.88 MB/s
+Total Duration:    0.117 s
+Number of Errors:  0
+Write times 99th %ile: 0.017 s
+Results Summary for Read Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  608.46 MB/s
+Total Duration:    0.032 s
+Number of Errors:  0
+Read times 99th %ile: 0.011 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=409600
+Results Summary for Write Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  314.84 MB/s
+Total Duration:    0.124 s
+Number of Errors:  0
+Write times 99th %ile: 0.023 s
+Results Summary for Read Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  2145.91 MB/s
+Total Duration:    0.018 s
+Number of Errors:  0
+Read times 99th %ile: 0.004 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=1024000
+Results Summary for Write Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  679.85 MB/s
+Total Duration:    0.144 s
+Number of Errors:  0
+Write times 99th %ile: 0.019 s
+Results Summary for Read Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  3252.51 MB/s
+Total Duration:    0.030 s
+Number of Errors:  0
+Read times 99th %ile: 0.006 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=100 -objectNamePrefix=loadgen -objectSize=10240000
+Results Summary for Write Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  1050.18 MB/s
+Total Duration:    0.930 s
+Number of Errors:  0
+Write times 99th %ile: 0.202 s
+Results Summary for Read Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  5828.48 MB/s
+Total Duration:    0.168 s
+Number of Errors:  0
+Read times 99th %ile: 0.032 s
+---------------------------------------------------------------------------------------------done
+
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=1024
+Results Summary for Write Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  0.48 MB/s
+Total Duration:    2.018 s
+Number of Errors:  0
+Write times 99th %ile: 0.226 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  9.48 MB/s
+Total Duration:    0.103 s
+Number of Errors:  0
+Read times 99th %ile: 0.004 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=2048
+Results Summary for Write Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  2.33 MB/s
+Total Duration:    0.838 s
+Number of Errors:  0
+Write times 99th %ile: 0.013 s
+Results Summary for Read Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  13.22 MB/s
+Total Duration:    0.148 s
+Number of Errors:  0
+Read times 99th %ile: 0.010 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=4096
+Results Summary for Write Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  4.16 MB/s
+Total Duration:    0.938 s
+Number of Errors:  0
+Write times 99th %ile: 0.016 s
+Results Summary for Read Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  22.17 MB/s
+Total Duration:    0.176 s
+Number of Errors:  0
+Read times 99th %ile: 0.006 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=10240
+Results Summary for Write Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  11.39 MB/s
+Total Duration:    0.857 s
+Number of Errors:  0
+Write times 99th %ile: 0.013 s
+Results Summary for Read Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  67.51 MB/s
+Total Duration:    0.145 s
+Number of Errors:  0
+Read times 99th %ile: 0.004 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=20480
+Results Summary for Write Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  23.40 MB/s
+Total Duration:    0.835 s
+Number of Errors:  0
+Write times 99th %ile: 0.016 s
+Results Summary for Read Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  109.36 MB/s
+Total Duration:    0.179 s
+Number of Errors:  0
+Read times 99th %ile: 0.006 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=40960
+Results Summary for Write Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  38.01 MB/s
+Total Duration:    1.028 s
+Number of Errors:  0
+Write times 99th %ile: 0.015 s
+Results Summary for Read Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  249.62 MB/s
+Total Duration:    0.156 s
+Number of Errors:  0
+Read times 99th %ile: 0.007 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=102400
+Results Summary for Write Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  93.98 MB/s
+Total Duration:    1.039 s
+Number of Errors:  0
+Write times 99th %ile: 0.016 s
+Results Summary for Read Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  560.64 MB/s
+Total Duration:    0.174 s
+Number of Errors:  0
+Read times 99th %ile: 0.005 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=204800
+Results Summary for Write Operation(s)
+Total Transferred: 195.312 MB
+Total Throughput:  181.42 MB/s
+Total Duration:    1.077 s
+Number of Errors:  0
+Write times 99th %ile: 0.017 s
+Results Summary for Read Operation(s)
+Total Transferred: 195.312 MB
+Total Throughput:  1181.76 MB/s
+Total Duration:    0.165 s
+Number of Errors:  0
+Read times 99th %ile: 0.004 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=409600
+Results Summary for Write Operation(s)
+Total Transferred: 390.625 MB
+Total Throughput:  372.20 MB/s
+Total Duration:    1.049 s
+Number of Errors:  0
+Write times 99th %ile: 0.021 s
+Results Summary for Read Operation(s)
+Total Transferred: 390.625 MB
+Total Throughput:  2367.08 MB/s
+Total Duration:    0.165 s
+Number of Errors:  0
+Read times 99th %ile: 0.004 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=1024000
+Results Summary for Write Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  810.26 MB/s
+Total Duration:    1.205 s
+Number of Errors:  0
+Write times 99th %ile: 0.019 s
+Results Summary for Read Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  4754.98 MB/s
+Total Duration:    0.205 s
+Number of Errors:  0
+Read times 99th %ile: 0.004 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=10240000
+Results Summary for Write Operation(s)
+Total Transferred: 9765.625 MB
+Total Throughput:  837.39 MB/s
+Total Duration:    11.662 s
+Number of Errors:  0
+Write times 99th %ile: 0.350 s
+Results Summary for Read Operation(s)
+Total Transferred: 9765.625 MB
+Total Throughput:  1290.65 MB/s
+Total Duration:    7.566 s
+Number of Errors:  0
+Read times 99th %ile: 0.453 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=20480000
+Results Summary for Write Operation(s)
+Total Transferred: 19531.250 MB
+Total Throughput:  549.29 MB/s
+Total Duration:    35.557 s
+Number of Errors:  0
+Write times 99th %ile: 1.168 s
+Results Summary for Read Operation(s)
+Total Transferred: 19531.250 MB
+Total Throughput:  1219.34 MB/s
+Total Duration:    16.018 s
+Number of Errors:  0
+Read times 99th %ile: 0.569 s
+---------------------------------------------------------------------------------------------done
+-numClients=10 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=102400000
+Results Summary for Write Operation(s)
+Total Transferred: 97656.250 MB
+Total Throughput:  551.31 MB/s
+Total Duration:    177.135 s
+Number of Errors:  0
+Write times 99th %ile: 3.537 s
+Results Summary for Read Operation(s)
+Total Transferred: 97656.250 MB
+Total Throughput:  1339.25 MB/s
+Total Duration:    72.918 s
+Number of Errors:  0
+Read times 99th %ile: 2.217 s
+---------------------------------------------------------------------------------------------done
+
+
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=1024
+Results Summary for Write Operation(s)
+Total Transferred: 0.098 MB
+Total Throughput:  1.84 MB/s
+Total Duration:    0.053 s
+Number of Errors:  0
+Write times 99th %ile: 0.052 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.098 MB
+Total Throughput:  4.83 MB/s
+Total Duration:    0.020 s
+Number of Errors:  0
+Read times 99th %ile: 0.019 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=2048
+Results Summary for Write Operation(s)
+Total Transferred: 0.195 MB
+Total Throughput:  4.18 MB/s
+Total Duration:    0.047 s
+Number of Errors:  0
+Write times 99th %ile: 0.043 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.195 MB
+Total Throughput:  6.66 MB/s
+Total Duration:    0.029 s
+Number of Errors:  0
+Read times 99th %ile: 0.028 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=4096
+Results Summary for Write Operation(s)
+Total Transferred: 0.391 MB
+Total Throughput:  18.52 MB/s
+Total Duration:    0.021 s
+Number of Errors:  0
+Write times 99th %ile: 0.019 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.391 MB
+Total Throughput:  34.54 MB/s
+Total Duration:    0.011 s
+Number of Errors:  0
+Read times 99th %ile: 0.010 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=10240
+Results Summary for Write Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  46.40 MB/s
+Total Duration:    0.021 s
+Number of Errors:  0
+Write times 99th %ile: 0.019 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  90.27 MB/s
+Total Duration:    0.011 s
+Number of Errors:  0
+Read times 99th %ile: 0.011 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=20480
+Results Summary for Write Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  85.50 MB/s
+Total Duration:    0.023 s
+Number of Errors:  0
+Write times 99th %ile: 0.022 s
+Results Summary for Read Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  183.14 MB/s
+Total Duration:    0.011 s
+Number of Errors:  0
+Read times 99th %ile: 0.011 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=40960
+Results Summary for Write Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  152.10 MB/s
+Total Duration:    0.026 s
+Number of Errors:  0
+Write times 99th %ile: 0.024 s
+Results Summary for Read Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  397.55 MB/s
+Total Duration:    0.010 s
+Number of Errors:  0
+Read times 99th %ile: 0.009 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=102400
+Results Summary for Write Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  320.94 MB/s
+Total Duration:    0.030 s
+Number of Errors:  0
+Write times 99th %ile: 0.029 s
+Results Summary for Read Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  792.65 MB/s
+Total Duration:    0.012 s
+Number of Errors:  0
+Read times 99th %ile: 0.012 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=204800
+Results Summary for Write Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  515.66 MB/s
+Total Duration:    0.038 s
+Number of Errors:  0
+Write times 99th %ile: 0.037 s
+Results Summary for Read Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  1624.79 MB/s
+Total Duration:    0.012 s
+Number of Errors:  0
+Read times 99th %ile: 0.011 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=409600
+Results Summary for Write Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  699.46 MB/s
+Total Duration:    0.056 s
+Number of Errors:  0
+Write times 99th %ile: 0.055 s
+Results Summary for Read Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  757.88 MB/s
+Total Duration:    0.052 s
+Number of Errors:  0
+Read times 99th %ile: 0.049 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=1024000
+Results Summary for Write Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  702.18 MB/s
+Total Duration:    0.139 s
+Number of Errors:  0
+Write times 99th %ile: 0.130 s
+Results Summary for Read Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  3897.81 MB/s
+Total Duration:    0.025 s
+Number of Errors:  0
+Read times 99th %ile: 0.024 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=100 -objectNamePrefix=loadgen -objectSize=10240000
+Results Summary for Write Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  1509.03 MB/s
+Total Duration:    0.647 s
+Number of Errors:  0
+Write times 99th %ile: 0.569 s
+Results Summary for Read Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  5107.98 MB/s
+Total Duration:    0.191 s
+Number of Errors:  0
+Read times 99th %ile: 0.191 s
+---------------------------------------------------------------------------------------------done
+
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=1024
+Results Summary for Write Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  6.68 MB/s
+Total Duration:    0.146 s
+Number of Errors:  0
+Write times 99th %ile: 0.024 s
+Results Summary for Read Operation(s)
+Total Transferred: 0.977 MB
+Total Throughput:  8.77 MB/s
+Total Duration:    0.111 s
+Number of Errors:  0
+Read times 99th %ile: 0.028 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=2048
+Results Summary for Write Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  12.71 MB/s
+Total Duration:    0.154 s
+Number of Errors:  0
+Write times 99th %ile: 0.023 s
+Results Summary for Read Operation(s)
+Total Transferred: 1.953 MB
+Total Throughput:  20.76 MB/s
+Total Duration:    0.094 s
+Number of Errors:  0
+Read times 99th %ile: 0.025 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=4096
+Results Summary for Write Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  24.39 MB/s
+Total Duration:    0.160 s
+Number of Errors:  0
+Write times 99th %ile: 0.030 s
+Results Summary for Read Operation(s)
+Total Transferred: 3.906 MB
+Total Throughput:  36.24 MB/s
+Total Duration:    0.108 s
+Number of Errors:  0
+Read times 99th %ile: 0.026 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=10240
+Results Summary for Write Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  62.78 MB/s
+Total Duration:    0.156 s
+Number of Errors:  0
+Write times 99th %ile: 0.024 s
+Results Summary for Read Operation(s)
+Total Transferred: 9.766 MB
+Total Throughput:  93.06 MB/s
+Total Duration:    0.105 s
+Number of Errors:  0
+Read times 99th %ile: 0.027 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=20480
+Results Summary for Write Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  125.81 MB/s
+Total Duration:    0.155 s
+Number of Errors:  0
+Write times 99th %ile: 0.025 s
+Results Summary for Read Operation(s)
+Total Transferred: 19.531 MB
+Total Throughput:  196.70 MB/s
+Total Duration:    0.099 s
+Number of Errors:  0
+Read times 99th %ile: 0.022 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=40960
+Results Summary for Write Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  222.56 MB/s
+Total Duration:    0.176 s
+Number of Errors:  0
+Write times 99th %ile: 0.033 s
+Results Summary for Read Operation(s)
+Total Transferred: 39.062 MB
+Total Throughput:  288.22 MB/s
+Total Duration:    0.136 s
+Number of Errors:  0
+Read times 99th %ile: 0.035 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=102400
+Results Summary for Write Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  360.84 MB/s
+Total Duration:    0.271 s
+Number of Errors:  0
+Write times 99th %ile: 0.069 s
+Results Summary for Read Operation(s)
+Total Transferred: 97.656 MB
+Total Throughput:  587.98 MB/s
+Total Duration:    0.166 s
+Number of Errors:  0
+Read times 99th %ile: 0.064 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=204800
+Results Summary for Write Operation(s)
+Total Transferred: 195.312 MB
+Total Throughput:  617.06 MB/s
+Total Duration:    0.317 s
+Number of Errors:  0
+Write times 99th %ile: 0.088 s
+Results Summary for Read Operation(s)
+Total Transferred: 195.312 MB
+Total Throughput:  1631.99 MB/s
+Total Duration:    0.120 s
+Number of Errors:  0
+Read times 99th %ile: 0.030 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=409600
+Results Summary for Write Operation(s)
+Total Transferred: 390.625 MB
+Total Throughput:  730.26 MB/s
+Total Duration:    0.535 s
+Number of Errors:  0
+Write times 99th %ile: 0.171 s
+Results Summary for Read Operation(s)
+Total Transferred: 390.625 MB
+Total Throughput:  2090.86 MB/s
+Total Duration:    0.187 s
+Number of Errors:  0
+Read times 99th %ile: 0.052 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=1024000
+Results Summary for Write Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  1122.85 MB/s
+Total Duration:    0.870 s
+Number of Errors:  0
+Write times 99th %ile: 0.259 s
+Results Summary for Read Operation(s)
+Total Transferred: 976.562 MB
+Total Throughput:  4052.46 MB/s
+Total Duration:    0.241 s
+Number of Errors:  0
+Read times 99th %ile: 0.085 s
+---------------------------------------------------------------------------------------------done
+-numClients=100 -numSamples=1000 -objectNamePrefix=loadgen -objectSize=10240000
+Results Summary for Write Operation(s)
+Total Transferred: 9765.625 MB
+Total Throughput:  886.26 MB/s
+Total Duration:    11.019 s
+Number of Errors:  0
+Write times 99th %ile: 2.296 s
+Results Summary for Read Operation(s)
+Total Transferred: 9765.625 MB
+Total Throughput:  2917.13 MB/s
+Total Duration:    3.348 s
+Number of Errors:  0
+Read times 99th %ile: 1.116 s
+---------------------------------------------------------------------------------------------done
+
