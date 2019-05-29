@@ -1,0 +1,5 @@
+name:付内东
+id:U201614891
+run-s3bench.sh:自己写的s3bench测试文件，
+如果要用的话需要修改下定义的参数变量以及命令中$GOPATH/gobin/s3bench这里需要根据自己s3bench的路径做修改
+test.txt：测试执行完毕后重定向的数据
